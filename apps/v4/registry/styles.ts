@@ -1,5 +1,5 @@
 export const STYLES = [
-  { name: "new-york-v4" as const, title: "New York" },
+  { name: "minecraft" as const, title: "New York" },
 ] as const
 
 export type Style = (typeof STYLES)[number]
