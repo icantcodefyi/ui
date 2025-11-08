@@ -68,117 +68,122 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
 
-  /* Minecraft-specific colors */
-  --mc-stone: oklch(0.8 0 0);
-  --mc-stone-dark: oklch(0.3 0 0);
-  --mc-stone-foreground: oklch(0.3 0 0);
-  --mc-success: oklch(0.5 0.15 145);
-  --mc-success-dark: oklch(0.35 0.15 145);
-  --mc-success-foreground: oklch(0.98 0 0);
-  --mc-warning: oklch(0.85 0.15 85);
-  --mc-warning-dark: oklch(0.6 0.15 85);
-  --mc-warning-foreground: oklch(0.2 0 0);
-  --mc-error: oklch(0.5 0.2 25);
-  --mc-error-dark: oklch(0.35 0.2 25);
-  --mc-error-foreground: oklch(0.98 0 0);
-  --mc-border: oklch(0.2 0 0);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  /* Light mode - High contrast readable colors based on Minecraft palette */
+  --background: #f5f5f5; /* Light grey background */
+  --foreground: #252326; /* Dark grey text - Minecraft brand dark */
+  --card: #ffffff; /* White cards */
+  --card-foreground: #252326; /* Dark grey text on cards */
+  --popover: #ffffff;
+  --popover-foreground: #252326;
+  --primary: #252326; /* Dark grey primary - Minecraft brand */
+  --primary-foreground: #ffffff; /* White text on primary */
+  --secondary: #9c9d97; /* Grey secondary - Minecraft grey */
+  --secondary-foreground: #252326; /* Dark text on secondary */
+  --muted: #e8e8e8; /* Muted grey background */
+  --muted-foreground: #474f52; /* Dark grey stone for muted text */
+  --accent: #80c71f; /* Minecraft green for accents */
+  --accent-foreground: #ffffff; /* White text on green */
+  --destructive: #b02e26; /* Minecraft red */
+
+  /* Minecraft-specific colors - Based on official game palette */
+  --mc-stone: #b8b8b8; /* Stone block */
+  --mc-stone-dark: #8b8b8b; /* Cobblestone */
+  --mc-stone-foreground: #252326; /* Dark text on stone */
+  --mc-success: #80c71f; /* Bright green - official Minecraft green */
+  --mc-success-dark: #5d7c15; /* Dark green - official palette */
+  --mc-success-foreground: #ffffff; /* White text on green */
+  --mc-warning: #fed83d; /* Gold/Yellow - official Minecraft gold */
+  --mc-warning-dark: #f9801d; /* Orange - official palette */
+  --mc-warning-foreground: #252326; /* Dark text on yellow/gold */
+  --mc-error: #b02e26; /* Red - official Minecraft red */
+  --mc-error-dark: #aa0000; /* Dark red - official palette */
+  --mc-error-foreground: #ffffff; /* White text on red */
+  --mc-border: #8b8b8b; /* Cobblestone grey for borders */
+
+  --border: #c5c5c5; /* Light border */
+  --input: #e8e8e8; /* Input background */
+  --ring: #80c71f; /* Minecraft green ring */
   --chart-1: var(--color-blue-300);
   --chart-2: var(--color-blue-500);
   --chart-3: var(--color-blue-600);
   --chart-4: var(--color-blue-700);
   --chart-5: var(--color-blue-800);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
-  --surface: oklch(0.98 0 0);
-  --surface-foreground: var(--foreground);
-  --code: var(--surface);
-  --code-foreground: var(--surface-foreground);
-  --code-highlight: oklch(0.96 0 0);
-  --code-number: oklch(0.56 0 0);
-  --selection: oklch(0.145 0 0);
-  --selection-foreground: oklch(1 0 0);
+  --sidebar: #ffffff;
+  --sidebar-foreground: #252326;
+  --sidebar-primary: #252326;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #e8e8e8;
+  --sidebar-accent-foreground: #252326;
+  --sidebar-border: #c5c5c5;
+  --sidebar-ring: #80c71f;
+  --surface: #fafafa;
+  --surface-foreground: #252326;
+  --code: #f5f5f5;
+  --code-foreground: #252326;
+  --code-highlight: #e8e8e8;
+  --code-number: #474f52;
+  --selection: #80c71f;
+  --selection-foreground: #ffffff;
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.269 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.371 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
+  /* Dark mode - High contrast readable colors based on Minecraft palette */
+  --background: #1a1a1a; /* Very dark background */
+  --foreground: #e8e8e8; /* Light grey text */
+  --card: #252326; /* Dark grey cards - Minecraft brand dark */
+  --card-foreground: #e8e8e8; /* Light text on cards */
+  --popover: #2a2a2a;
+  --popover-foreground: #e8e8e8;
+  --primary: #c5b6b3; /* White smoke - Minecraft brand light */
+  --primary-foreground: #252326; /* Dark text on light primary */
+  --secondary: #474f52; /* Dark grey stone */
+  --secondary-foreground: #e8e8e8; /* Light text on secondary */
+  --muted: #2a2a2a; /* Muted dark background */
+  --muted-foreground: #9c9d97; /* Grey for muted text */
+  --accent: #80c71f; /* Minecraft green for accents */
+  --accent-foreground: #ffffff; /* White text on green */
+  --destructive: #b02e26; /* Minecraft red */
 
-  /* Minecraft-specific colors - Dark mode */
-  --mc-stone: oklch(0.35 0 0);
-  --mc-stone-dark: oklch(0.2 0 0);
-  --mc-stone-foreground: oklch(0.85 0 0);
-  --mc-success: oklch(0.45 0.15 145);
-  --mc-success-dark: oklch(0.3 0.15 145);
-  --mc-success-foreground: oklch(0.98 0 0);
-  --mc-warning: oklch(0.7 0.15 85);
-  --mc-warning-dark: oklch(0.5 0.15 85);
-  --mc-warning-foreground: oklch(0.15 0 0);
-  --mc-error: oklch(0.45 0.2 25);
-  --mc-error-dark: oklch(0.3 0.2 25);
-  --mc-error-foreground: oklch(0.98 0 0);
-  --mc-border: oklch(0.6 0 0);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
+  /* Minecraft-specific colors - Dark mode - Based on official game palette */
+  --mc-stone: #8b8b8b; /* Cobblestone - darker stone for dark mode */
+  --mc-stone-dark: #474f52; /* Dark grey stone - official palette */
+  --mc-stone-foreground: #e8e8e8; /* Light text on stone */
+  --mc-success: #80c71f; /* Bright green - official Minecraft green */
+  --mc-success-dark: #5d7c15; /* Dark green - official palette */
+  --mc-success-foreground: #ffffff; /* White text on green */
+  --mc-warning: #fed83d; /* Gold/Yellow - official Minecraft gold */
+  --mc-warning-dark: #f9801d; /* Orange - official palette */
+  --mc-warning-foreground: #252326; /* Dark text on yellow/gold */
+  --mc-error: #b02e26; /* Red - official Minecraft red */
+  --mc-error-dark: #aa0000; /* Dark red - official palette */
+  --mc-error-foreground: #ffffff; /* White text on red */
+  --mc-border: #474f52; /* Dark stone for borders */
+
+  --border: #3a3a3a; /* Dark border */
+  --input: #2a2a2a; /* Input background */
+  --ring: #80c71f; /* Minecraft green ring */
   --chart-1: var(--color-blue-300);
   --chart-2: var(--color-blue-500);
   --chart-3: var(--color-blue-600);
   --chart-4: var(--color-blue-700);
   --chart-5: var(--color-blue-800);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.439 0 0);
-  --surface: oklch(0.2 0 0);
-  --surface-foreground: oklch(0.708 0 0);
-  --code: var(--surface);
-  --code-foreground: var(--surface-foreground);
-  --code-highlight: oklch(0.27 0 0);
-  --code-number: oklch(0.72 0 0);
-  --selection: oklch(0.922 0 0);
-  --selection-foreground: oklch(0.205 0 0);
+  --sidebar: #252326;
+  --sidebar-foreground: #e8e8e8;
+  --sidebar-primary: #80c71f;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #2a2a2a;
+  --sidebar-accent-foreground: #e8e8e8;
+  --sidebar-border: #3a3a3a;
+  --sidebar-ring: #80c71f;
+  --surface: #252326;
+  --surface-foreground: #c5c5c5;
+  --code: #1f1f1f;
+  --code-foreground: #c5c5c5;
+  --code-highlight: #2a2a2a;
+  --code-number: #9c9d97;
+  --selection: #80c71f;
+  --selection-foreground: #ffffff;
 }
 
 @layer base {
