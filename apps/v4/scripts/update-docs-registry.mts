@@ -7,16 +7,6 @@ const __dirname = path.dirname(__filename)
 
 const DOCS_DIR = path.join(__dirname, "../content/docs/components")
 
-const MINECRAFT_UI_NOTE = `
-<Callout className="mt-4">
-  **Using Minecraft UI?** This component is available with Minecraft styling at [minecraft.ani.ink](https://minecraft.ani.ink). Install it with:
-  
-  \`\`\`bash
-  npx shadcn@latest add @minecraft-ui/{COMPONENT_NAME}
-  \`\`\`
-</Callout>
-`
-
 async function updateComponentDocs() {
   try {
     const files = await fs.readdir(DOCS_DIR)
@@ -29,34 +19,42 @@ async function updateComponentDocs() {
       const filePath = path.join(DOCS_DIR, file)
       let content = await fs.readFile(filePath, "utf-8")
 
-      // Skip if already has Minecraft UI note
-      if (content.includes("Using Minecraft UI?")) {
-        skippedCount++
-        continue
-      }
-
       // Get component name from filename (e.g., alert.mdx -> alert)
       const componentName = file.replace(".mdx", "")
 
-      // Find the CLI installation section and add note after it
-      const cliPattern = /```bash\s*npx shadcn@latest add [^\s]+\s*```/
+      let hasChanges = false
 
-      if (cliPattern.test(content)) {
-        // Replace {COMPONENT_NAME} with actual component name
-        const note = MINECRAFT_UI_NOTE.replace("{COMPONENT_NAME}", componentName)
+      // 1. Remove any existing Minecraft UI callouts
+      const calloutPattern =
+        /<Callout[^>]*>\s*\*\*Using Minecraft UI\?\*\*[\s\S]*?<\/Callout>/g
+      if (calloutPattern.test(content)) {
+        content = content.replace(calloutPattern, "")
+        hasChanges = true
+      }
 
-        // Add the note after the CLI installation command
-        content = content.replace(
-          cliPattern,
-          (match) => match + "\n" + note
-        )
+      // 2. Update CLI installation command to use @minecraft-ui/{component}
+      const oldCliPattern = /```bash\s*npx shadcn@latest add ([^\s@]+)\s*```/g
+      const matches = [...content.matchAll(oldCliPattern)]
 
+      for (const match of matches) {
+        const oldCommand = match[0]
+        const componentInCommand = match[1]
+
+        // Only update if it's not already using @minecraft-ui
+        if (!oldCommand.includes("@minecraft-ui")) {
+          const newCommand = `\`\`\`bash\nnpx shadcn@latest add @minecraft-ui/${componentInCommand}\n\`\`\``
+          content = content.replace(oldCommand, newCommand)
+          hasChanges = true
+        }
+      }
+
+      if (hasChanges) {
         await fs.writeFile(filePath, content, "utf-8")
         updatedCount++
         console.log(`✅ Updated: ${file}`)
       } else {
         skippedCount++
-        console.log(`⏭️  Skipped (no CLI section): ${file}`)
+        console.log(`⏭️  Skipped (no changes needed): ${file}`)
       }
     }
 
@@ -71,4 +69,3 @@ async function updateComponentDocs() {
 }
 
 updateComponentDocs()
-
