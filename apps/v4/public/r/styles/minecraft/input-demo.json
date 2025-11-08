@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "input"
+  ],
+  "files": [
+    {
+      "path": "registry/minecraft/examples/input-demo.tsx",
+      "content": "import { Input } from \"@/registry/minecraft/ui/input\"\n\nexport default function InputDemo() {\n  return <Input type=\"email\" placeholder=\"Email\" />\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

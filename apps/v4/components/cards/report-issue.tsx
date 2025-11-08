@@ -2,24 +2,24 @@
 
 import * as React from "react"
 
-import { Button } from "@/registry/new-york-v4/ui/button"
+import { Button } from "@/registry/minecraft/ui/button"
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/registry/new-york-v4/ui/card"
-import { Field, FieldGroup, FieldLabel } from "@/registry/new-york-v4/ui/field"
-import { Input } from "@/registry/new-york-v4/ui/input"
+} from "@/registry/minecraft/ui/card"
+import { Field, FieldGroup, FieldLabel } from "@/registry/minecraft/ui/field"
+import { Input } from "@/registry/minecraft/ui/input"
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/registry/new-york-v4/ui/select"
-import { Textarea } from "@/registry/new-york-v4/ui/textarea"
+} from "@/registry/minecraft/ui/select"
+import { Textarea } from "@/registry/minecraft/ui/textarea"
 
 export function CardsReportIssue() {
   const id = React.useId()

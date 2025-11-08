@@ -1,8 +1,8 @@
-import { Label } from "@/registry/new-york-v4/ui/label"
+import { Label } from "@/registry/minecraft/ui/label"
 import {
   RadioGroup,
   RadioGroupItem,
-} from "@/registry/new-york-v4/ui/radio-group"
+} from "@/registry/minecraft/ui/radio-group"
 
 const plans = [
   {

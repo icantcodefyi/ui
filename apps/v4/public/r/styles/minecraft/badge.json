@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "badge",
+  "type": "registry:ui",
+  "dependencies": [
+    "@radix-ui/react-slot"
+  ],
+  "files": [
+    {
+      "path": "registry/minecraft/ui/badge.tsx",
+      "content": "import * as React from \"react\"\nimport { Slot } from \"@radix-ui/react-slot\"\nimport { cva, type VariantProps } from \"class-variance-authority\"\n\nimport { cn } from \"@/lib/utils\"\n\nconst badgeVariants = cva(\n  \"inline-flex items-center justify-center border-0 px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none overflow-hidden shadow-[2px_2px_0px_0px_var(--mc-border)] font-sans\",\n  {\n    variants: {\n      variant: {\n        default:\n          \"bg-[var(--mc-stone-dark)] text-[var(--mc-stone-foreground)] [a&]:hover:brightness-110\",\n        secondary:\n          \"bg-[var(--mc-stone)] text-[var(--mc-stone-foreground)] [a&]:hover:brightness-110\",\n        destructive:\n          \"bg-[var(--mc-error)] text-[var(--mc-error-foreground)] [a&]:hover:brightness-110\",\n        outline:\n          \"border-2 border-[var(--mc-border)] bg-transparent shadow-none text-foreground [a&]:hover:bg-accent\",\n      },\n    },\n    defaultVariants: {\n      variant: \"default\",\n    },\n  }\n)\n\nfunction Badge({\n  className,\n  variant,\n  asChild = false,\n  ...props\n}: React.ComponentProps<\"span\"> &\n  VariantProps<typeof badgeVariants> & { asChild?: boolean }) {\n  const Comp = asChild ? Slot : \"span\"\n\n  return (\n    <Comp\n      data-slot=\"badge\"\n      className={cn(badgeVariants({ variant }), className)}\n      {...props}\n    />\n  )\n}\n\nexport { Badge, badgeVariants }\n",
+      "type": "registry:ui"
+    }
+  ]
+}

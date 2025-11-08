@@ -4,13 +4,13 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/registry/new-york-v4/ui/avatar"
-import { Button } from "@/registry/new-york-v4/ui/button"
+} from "@/registry/minecraft/ui/avatar"
+import { Button } from "@/registry/minecraft/ui/button"
 import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
-} from "@/registry/new-york-v4/ui/hover-card"
+} from "@/registry/minecraft/ui/hover-card"
 
 export function HoverCardDemo() {
   return (

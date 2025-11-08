@@ -7,7 +7,7 @@ import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@/registry/new-york-v4/ui/collapsible"
+} from "@/registry/minecraft/ui/collapsible"
 import {
   SidebarGroup,
   SidebarGroupLabel,
@@ -18,7 +18,7 @@ import {
   SidebarMenuSub,
   SidebarMenuSubButton,
   SidebarMenuSubItem,
-} from "@/registry/new-york-v4/ui/sidebar"
+} from "@/registry/minecraft/ui/sidebar"
 
 export function NavMain({
   items,

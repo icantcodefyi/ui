@@ -15,7 +15,7 @@ import {
 } from "@tanstack/react-table"
 import { MoreHorizontalIcon } from "lucide-react"
 
-import { Button } from "@/registry/new-york-v4/ui/button"
+import { Button } from "@/registry/minecraft/ui/button"
 import {
   Card,
   CardAction,
@@ -23,8 +23,8 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/registry/new-york-v4/ui/card"
-import { Checkbox } from "@/registry/new-york-v4/ui/checkbox"
+} from "@/registry/minecraft/ui/card"
+import { Checkbox } from "@/registry/minecraft/ui/checkbox"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -32,7 +32,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/registry/new-york-v4/ui/dropdown-menu"
+} from "@/registry/minecraft/ui/dropdown-menu"
 import {
   Table,
   TableBody,
@@ -40,7 +40,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/registry/new-york-v4/ui/table"
+} from "@/registry/minecraft/ui/table"
 
 const data: Payment[] = [
   {

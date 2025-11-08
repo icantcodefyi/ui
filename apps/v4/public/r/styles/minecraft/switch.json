@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "switch",
+  "type": "registry:ui",
+  "dependencies": [
+    "@radix-ui/react-switch"
+  ],
+  "files": [
+    {
+      "path": "registry/minecraft/ui/switch.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport * as SwitchPrimitive from \"@radix-ui/react-switch\"\n\nimport { cn } from \"@/lib/utils\"\n\nfunction Switch({\n  className,\n  ...props\n}: React.ComponentProps<typeof SwitchPrimitive.Root>) {\n  return (\n    <SwitchPrimitive.Root\n      data-slot=\"switch\"\n      className={cn(\n        \"peer inline-flex h-[1.15rem] w-8 shrink-0 items-center border-0 shadow-[inset_1px_1px_0px_0px_rgba(0,0,0,0.3)] transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-[var(--mc-success)] data-[state=unchecked]:bg-[var(--mc-stone-dark)]\",\n        className\n      )}\n      {...props}\n    >\n      <SwitchPrimitive.Thumb\n        data-slot=\"switch-thumb\"\n        className={cn(\n          \"pointer-events-none block size-4 bg-[var(--mc-stone)] shadow-[1px_1px_0px_0px_var(--mc-border)] ring-0 transition-transform data-[state=checked]:translate-x-[calc(100%-2px)] data-[state=unchecked]:translate-x-0\"\n        )}\n      />\n    </SwitchPrimitive.Root>\n  )\n}\n\nexport { Switch }\n",
+      "type": "registry:ui"
+    }
+  ]
+}

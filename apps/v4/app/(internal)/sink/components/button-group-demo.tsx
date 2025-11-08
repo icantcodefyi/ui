@@ -33,12 +33,12 @@ import {
   VolumeOffIcon,
 } from "lucide-react"
 
-import { Button } from "@/registry/new-york-v4/ui/button"
+import { Button } from "@/registry/minecraft/ui/button"
 import {
   ButtonGroup,
   ButtonGroupSeparator,
   ButtonGroupText,
-} from "@/registry/new-york-v4/ui/button-group"
+} from "@/registry/minecraft/ui/button-group"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -46,35 +46,35 @@ import {
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/registry/new-york-v4/ui/dropdown-menu"
-import { Field, FieldGroup } from "@/registry/new-york-v4/ui/field"
-import { Input } from "@/registry/new-york-v4/ui/input"
+} from "@/registry/minecraft/ui/dropdown-menu"
+import { Field, FieldGroup } from "@/registry/minecraft/ui/field"
+import { Input } from "@/registry/minecraft/ui/input"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupButton,
   InputGroupInput,
-} from "@/registry/new-york-v4/ui/input-group"
-import { Label } from "@/registry/new-york-v4/ui/label"
+} from "@/registry/minecraft/ui/input-group"
+import { Label } from "@/registry/minecraft/ui/label"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/registry/new-york-v4/ui/popover"
+} from "@/registry/minecraft/ui/popover"
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/registry/new-york-v4/ui/select"
-import { Separator } from "@/registry/new-york-v4/ui/separator"
-import { Textarea } from "@/registry/new-york-v4/ui/textarea"
+} from "@/registry/minecraft/ui/select"
+import { Separator } from "@/registry/minecraft/ui/separator"
+import { Textarea } from "@/registry/minecraft/ui/textarea"
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/registry/new-york-v4/ui/tooltip"
+} from "@/registry/minecraft/ui/tooltip"
 
 export function ButtonGroupDemo() {
   const [currency, setCurrency] = useState("$")

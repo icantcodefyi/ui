@@ -11,20 +11,20 @@ import {
   FieldSeparator,
   FieldSet,
   FieldTitle,
-} from "@/registry/new-york-v4/ui/field"
-import { Label } from "@/registry/new-york-v4/ui/label"
+} from "@/registry/minecraft/ui/field"
+import { Label } from "@/registry/minecraft/ui/label"
 import {
   RadioGroup,
   RadioGroupItem,
-} from "@/registry/new-york-v4/ui/radio-group"
+} from "@/registry/minecraft/ui/radio-group"
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/registry/new-york-v4/ui/select"
-import { Switch } from "@/registry/new-york-v4/ui/switch"
+} from "@/registry/minecraft/ui/select"
+import { Switch } from "@/registry/minecraft/ui/switch"
 
 const modes = [
   {

@@ -1,5 +1,5 @@
-import { Checkbox } from "@/registry/new-york-v4/ui/checkbox"
-import { Field, FieldLabel } from "@/registry/new-york-v4/ui/field"
+import { Checkbox } from "@/registry/minecraft/ui/checkbox"
+import { Field, FieldLabel } from "@/registry/minecraft/ui/field"
 
 export function FieldCheckbox() {
   return (

@@ -6,15 +6,15 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/registry/new-york-v4/ui/avatar"
-import { Button } from "@/registry/new-york-v4/ui/button"
+} from "@/registry/minecraft/ui/avatar"
+import { Button } from "@/registry/minecraft/ui/button"
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/registry/new-york-v4/ui/card"
+} from "@/registry/minecraft/ui/card"
 import {
   Command,
   CommandEmpty,
@@ -22,19 +22,19 @@ import {
   CommandInput,
   CommandItem,
   CommandList,
-} from "@/registry/new-york-v4/ui/command"
+} from "@/registry/minecraft/ui/command"
 import {
   Item,
   ItemActions,
   ItemContent,
   ItemDescription,
   ItemTitle,
-} from "@/registry/new-york-v4/ui/item"
+} from "@/registry/minecraft/ui/item"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/registry/new-york-v4/ui/popover"
+} from "@/registry/minecraft/ui/popover"
 
 const teamMembers = [
   {

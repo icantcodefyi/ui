@@ -1,20 +1,20 @@
 "use client"
 
-import { Button } from "@/registry/new-york-v4/ui/button"
+import { Button } from "@/registry/minecraft/ui/button"
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/registry/new-york-v4/ui/card"
+} from "@/registry/minecraft/ui/card"
 import {
   Field,
   FieldContent,
   FieldDescription,
   FieldLabel,
-} from "@/registry/new-york-v4/ui/field"
-import { Switch } from "@/registry/new-york-v4/ui/switch"
+} from "@/registry/minecraft/ui/field"
+import { Switch } from "@/registry/minecraft/ui/switch"
 
 export function CardsCookieSettings() {
   return (

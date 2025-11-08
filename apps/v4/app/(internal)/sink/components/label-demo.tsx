@@ -1,7 +1,7 @@
-import { Checkbox } from "@/registry/new-york-v4/ui/checkbox"
-import { Input } from "@/registry/new-york-v4/ui/input"
-import { Label } from "@/registry/new-york-v4/ui/label"
-import { Textarea } from "@/registry/new-york-v4/ui/textarea"
+import { Checkbox } from "@/registry/minecraft/ui/checkbox"
+import { Input } from "@/registry/minecraft/ui/input"
+import { Label } from "@/registry/minecraft/ui/label"
+import { Textarea } from "@/registry/minecraft/ui/textarea"
 
 export function LabelDemo() {
   return (

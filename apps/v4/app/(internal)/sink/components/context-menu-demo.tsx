@@ -14,7 +14,7 @@ import {
   ContextMenuSubContent,
   ContextMenuSubTrigger,
   ContextMenuTrigger,
-} from "@/registry/new-york-v4/ui/context-menu"
+} from "@/registry/minecraft/ui/context-menu"
 
 export function ContextMenuDemo() {
   return (

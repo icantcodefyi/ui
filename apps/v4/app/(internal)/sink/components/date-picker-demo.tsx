@@ -7,8 +7,8 @@ import { DateRange } from "react-day-picker"
 
 import { cn } from "@/lib/utils"
 import { useIsMobile } from "@/hooks/use-mobile"
-import { Button } from "@/registry/new-york-v4/ui/button"
-import { Calendar } from "@/registry/new-york-v4/ui/calendar"
+import { Button } from "@/registry/minecraft/ui/button"
+import { Calendar } from "@/registry/minecraft/ui/calendar"
 import {
   Drawer,
   DrawerContent,
@@ -16,12 +16,12 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "@/registry/new-york-v4/ui/drawer"
+} from "@/registry/minecraft/ui/drawer"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/registry/new-york-v4/ui/popover"
+} from "@/registry/minecraft/ui/popover"
 
 export function DatePickerDemo() {
   return (

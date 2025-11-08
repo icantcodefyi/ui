@@ -10,9 +10,9 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-} from "@/registry/new-york-v4/ui/sidebar"
-import { Skeleton } from "@/registry/new-york-v4/ui/skeleton"
-import { Switch } from "@/registry/new-york-v4/ui/switch"
+} from "@/registry/minecraft/ui/sidebar"
+import { Skeleton } from "@/registry/minecraft/ui/skeleton"
+import { Switch } from "@/registry/minecraft/ui/switch"
 
 export function NavSecondary({
   items,

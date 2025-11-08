@@ -1,5 +1,5 @@
-import { Label } from "@/registry/new-york-v4/ui/label"
-import { Textarea } from "@/registry/new-york-v4/ui/textarea"
+import { Label } from "@/registry/minecraft/ui/label"
+import { Textarea } from "@/registry/minecraft/ui/textarea"
 
 export function TextareaDemo() {
   return (

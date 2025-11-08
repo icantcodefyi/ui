@@ -1,4 +1,4 @@
-import { Input } from "@/registry/new-york-v4/ui/input"
+import { Input } from "@/registry/minecraft/ui/input"
 
 export function InputDemo() {
   return (

@@ -4,8 +4,8 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/registry/new-york-v4/ui/avatar"
-import { Button } from "@/registry/new-york-v4/ui/button"
+} from "@/registry/minecraft/ui/avatar"
+import { Button } from "@/registry/minecraft/ui/button"
 import {
   Item,
   ItemActions,
@@ -13,7 +13,7 @@ import {
   ItemDescription,
   ItemMedia,
   ItemTitle,
-} from "@/registry/new-york-v4/ui/item"
+} from "@/registry/minecraft/ui/item"
 
 export function ItemAvatar() {
   return (

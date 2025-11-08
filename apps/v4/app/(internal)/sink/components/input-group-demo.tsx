@@ -27,24 +27,24 @@ import {
 } from "lucide-react"
 import { toast } from "sonner"
 
-import { Button } from "@/registry/new-york-v4/ui/button"
+import { Button } from "@/registry/minecraft/ui/button"
 import {
   ButtonGroup,
   ButtonGroupText,
-} from "@/registry/new-york-v4/ui/button-group"
+} from "@/registry/minecraft/ui/button-group"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/registry/new-york-v4/ui/dropdown-menu"
+} from "@/registry/minecraft/ui/dropdown-menu"
 import {
   Field,
   FieldDescription,
   FieldGroup,
   FieldLabel,
-} from "@/registry/new-york-v4/ui/field"
-import { Input } from "@/registry/new-york-v4/ui/input"
+} from "@/registry/minecraft/ui/field"
+import { Input } from "@/registry/minecraft/ui/input"
 import {
   InputGroup,
   InputGroupAddon,
@@ -52,20 +52,20 @@ import {
   InputGroupInput,
   InputGroupText,
   InputGroupTextarea,
-} from "@/registry/new-york-v4/ui/input-group"
-import { Kbd, KbdGroup } from "@/registry/new-york-v4/ui/kbd"
+} from "@/registry/minecraft/ui/input-group"
+import { Kbd, KbdGroup } from "@/registry/minecraft/ui/kbd"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/registry/new-york-v4/ui/popover"
-import { Spinner } from "@/registry/new-york-v4/ui/spinner"
-import { Textarea } from "@/registry/new-york-v4/ui/textarea"
+} from "@/registry/minecraft/ui/popover"
+import { Spinner } from "@/registry/minecraft/ui/spinner"
+import { Textarea } from "@/registry/minecraft/ui/textarea"
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/registry/new-york-v4/ui/tooltip"
+} from "@/registry/minecraft/ui/tooltip"
 
 export function InputGroupDemo() {
   const [country, setCountry] = useState("+1")

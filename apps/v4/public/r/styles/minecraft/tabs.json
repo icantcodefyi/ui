@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tabs",
+  "type": "registry:ui",
+  "dependencies": [
+    "@radix-ui/react-tabs"
+  ],
+  "files": [
+    {
+      "path": "registry/minecraft/ui/tabs.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport * as TabsPrimitive from \"@radix-ui/react-tabs\"\n\nimport { cn } from \"@/lib/utils\"\n\nfunction Tabs({\n  className,\n  ...props\n}: React.ComponentProps<typeof TabsPrimitive.Root>) {\n  return (\n    <TabsPrimitive.Root\n      data-slot=\"tabs\"\n      className={cn(\"flex flex-col gap-2\", className)}\n      {...props}\n    />\n  )\n}\n\nfunction TabsList({\n  className,\n  ...props\n}: React.ComponentProps<typeof TabsPrimitive.List>) {\n  return (\n    <TabsPrimitive.List\n      data-slot=\"tabs-list\"\n      className={cn(\n        \"text-foreground inline-flex h-9 w-fit items-center justify-center border-0 bg-[var(--mc-stone-dark)] p-[3px] shadow-[2px_2px_0px_0px_var(--mc-border)]\",\n        className\n      )}\n      {...props}\n    />\n  )\n}\n\nfunction TabsTrigger({\n  className,\n  ...props\n}: React.ComponentProps<typeof TabsPrimitive.Trigger>) {\n  return (\n    <TabsPrimitive.Trigger\n      data-slot=\"tabs-trigger\"\n      className={cn(\n        \"data-[state=active]:text-foreground text-foreground inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 border-0 px-2 py-1 font-sans text-sm font-medium whitespace-nowrap outline-none disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-[var(--mc-stone)] data-[state=active]:shadow-[1px_1px_0px_0px_var(--mc-border)] [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4\",\n        className\n      )}\n      {...props}\n    />\n  )\n}\n\nfunction TabsContent({\n  className,\n  ...props\n}: React.ComponentProps<typeof TabsPrimitive.Content>) {\n  return (\n    <TabsPrimitive.Content\n      data-slot=\"tabs-content\"\n      className={cn(\"flex-1 outline-none\", className)}\n      {...props}\n    />\n  )\n}\n\nexport { Tabs, TabsList, TabsTrigger, TabsContent }\n",
+      "type": "registry:ui"
+    }
+  ]
+}

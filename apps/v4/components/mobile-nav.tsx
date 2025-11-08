@@ -8,12 +8,12 @@ import { PAGES_NEW } from "@/lib/docs"
 import { showMcpDocs } from "@/lib/flags"
 import { source } from "@/lib/source"
 import { cn } from "@/lib/utils"
-import { Button } from "@/registry/new-york-v4/ui/button"
+import { Button } from "@/registry/minecraft/ui/button"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/registry/new-york-v4/ui/popover"
+} from "@/registry/minecraft/ui/popover"
 
 const TOP_LEVEL_SECTIONS = [
   { name: "Get Started", href: "/docs" },

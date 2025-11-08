@@ -3,8 +3,8 @@
 import * as React from "react"
 import { IconMinus, IconPlus } from "@tabler/icons-react"
 
-import { Button } from "@/registry/new-york-v4/ui/button"
-import { ButtonGroup } from "@/registry/new-york-v4/ui/button-group"
+import { Button } from "@/registry/minecraft/ui/button"
+import { ButtonGroup } from "@/registry/minecraft/ui/button-group"
 import {
   Field,
   FieldContent,
@@ -15,13 +15,13 @@ import {
   FieldSeparator,
   FieldSet,
   FieldTitle,
-} from "@/registry/new-york-v4/ui/field"
-import { Input } from "@/registry/new-york-v4/ui/input"
+} from "@/registry/minecraft/ui/field"
+import { Input } from "@/registry/minecraft/ui/input"
 import {
   RadioGroup,
   RadioGroupItem,
-} from "@/registry/new-york-v4/ui/radio-group"
-import { Switch } from "@/registry/new-york-v4/ui/switch"
+} from "@/registry/minecraft/ui/radio-group"
+import { Switch } from "@/registry/minecraft/ui/switch"
 
 export function AppearanceSettings() {
   const [gpuCount, setGpuCount] = React.useState(8)

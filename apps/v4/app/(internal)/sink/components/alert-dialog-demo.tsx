@@ -8,8 +8,8 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@/registry/new-york-v4/ui/alert-dialog"
-import { Button } from "@/registry/new-york-v4/ui/button"
+} from "@/registry/minecraft/ui/alert-dialog"
+import { Button } from "@/registry/minecraft/ui/button"
 
 export function AlertDialogDemo() {
   return (

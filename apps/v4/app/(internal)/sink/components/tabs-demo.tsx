@@ -1,6 +1,6 @@
 import { AppWindowIcon, CodeIcon } from "lucide-react"
 
-import { Button } from "@/registry/new-york-v4/ui/button"
+import { Button } from "@/registry/minecraft/ui/button"
 import {
   Card,
   CardContent,
@@ -8,15 +8,15 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/registry/new-york-v4/ui/card"
-import { Input } from "@/registry/new-york-v4/ui/input"
-import { Label } from "@/registry/new-york-v4/ui/label"
+} from "@/registry/minecraft/ui/card"
+import { Input } from "@/registry/minecraft/ui/input"
+import { Label } from "@/registry/minecraft/ui/label"
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "@/registry/new-york-v4/ui/tabs"
+} from "@/registry/minecraft/ui/tabs"
 
 export function TabsDemo() {
   return (

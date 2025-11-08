@@ -10,7 +10,7 @@ import { useThemeConfig } from "@/components/active-theme"
 import { copyToClipboardWithMeta } from "@/components/copy-button"
 import { Icons } from "@/components/icons"
 import { BaseColor, baseColors, baseColorsOKLCH } from "@/registry/base-colors"
-import { Button } from "@/registry/new-york-v4/ui/button"
+import { Button } from "@/registry/minecraft/ui/button"
 import {
   Dialog,
   DialogContent,
@@ -18,7 +18,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/registry/new-york-v4/ui/dialog"
+} from "@/registry/minecraft/ui/dialog"
 import {
   Drawer,
   DrawerContent,
@@ -26,9 +26,9 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "@/registry/new-york-v4/ui/drawer"
-import { Label } from "@/registry/new-york-v4/ui/label"
-import { ScrollArea, ScrollBar } from "@/registry/new-york-v4/ui/scroll-area"
+} from "@/registry/minecraft/ui/drawer"
+import { Label } from "@/registry/minecraft/ui/label"
+import { ScrollArea, ScrollBar } from "@/registry/minecraft/ui/scroll-area"
 import {
   Select,
   SelectContent,
@@ -36,13 +36,13 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/registry/new-york-v4/ui/select"
+} from "@/registry/minecraft/ui/select"
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "@/registry/new-york-v4/ui/tabs"
+} from "@/registry/minecraft/ui/tabs"
 
 interface BaseColorOKLCH {
   light: Record<string, string>

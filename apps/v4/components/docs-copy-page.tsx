@@ -3,20 +3,20 @@
 import { IconCheck, IconChevronDown, IconCopy } from "@tabler/icons-react"
 
 import { useCopyToClipboard } from "@/hooks/use-copy-to-clipboard"
-import { Button } from "@/registry/new-york-v4/ui/button"
+import { Button } from "@/registry/minecraft/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/registry/new-york-v4/ui/dropdown-menu"
+} from "@/registry/minecraft/ui/dropdown-menu"
 import {
   Popover,
   PopoverAnchor,
   PopoverContent,
   PopoverTrigger,
-} from "@/registry/new-york-v4/ui/popover"
-import { Separator } from "@/registry/new-york-v4/ui/separator"
+} from "@/registry/minecraft/ui/popover"
+import { Separator } from "@/registry/minecraft/ui/separator"
 
 function getPromptUrl(baseURL: string, url: string) {
   return `${baseURL}?q=${encodeURIComponent(

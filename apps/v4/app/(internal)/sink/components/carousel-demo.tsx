@@ -1,13 +1,13 @@
 import * as React from "react"
 
-import { Card, CardContent } from "@/registry/new-york-v4/ui/card"
+import { Card, CardContent } from "@/registry/minecraft/ui/card"
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/registry/new-york-v4/ui/carousel"
+} from "@/registry/minecraft/ui/carousel"
 
 export function CarouselDemo() {
   return (

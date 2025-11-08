@@ -20,8 +20,8 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/registry/new-york-v4/ui/avatar"
-import { Badge } from "@/registry/new-york-v4/ui/badge"
+} from "@/registry/minecraft/ui/avatar"
+import { Badge } from "@/registry/minecraft/ui/badge"
 import {
   Command,
   CommandEmpty,
@@ -29,7 +29,7 @@ import {
   CommandInput,
   CommandItem,
   CommandList,
-} from "@/registry/new-york-v4/ui/command"
+} from "@/registry/minecraft/ui/command"
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -42,25 +42,25 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
-} from "@/registry/new-york-v4/ui/dropdown-menu"
-import { Field, FieldLabel } from "@/registry/new-york-v4/ui/field"
+} from "@/registry/minecraft/ui/dropdown-menu"
+import { Field, FieldLabel } from "@/registry/minecraft/ui/field"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupButton,
   InputGroupTextarea,
-} from "@/registry/new-york-v4/ui/input-group"
+} from "@/registry/minecraft/ui/input-group"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/registry/new-york-v4/ui/popover"
-import { Switch } from "@/registry/new-york-v4/ui/switch"
+} from "@/registry/minecraft/ui/popover"
+import { Switch } from "@/registry/minecraft/ui/switch"
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/registry/new-york-v4/ui/tooltip"
+} from "@/registry/minecraft/ui/tooltip"
 
 const SAMPLE_DATA = {
   mentionable: [

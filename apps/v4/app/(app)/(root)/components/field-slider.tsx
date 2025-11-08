@@ -6,8 +6,8 @@ import {
   Field,
   FieldDescription,
   FieldTitle,
-} from "@/registry/new-york-v4/ui/field"
-import { Slider } from "@/registry/new-york-v4/ui/slider"
+} from "@/registry/minecraft/ui/field"
+import { Slider } from "@/registry/minecraft/ui/slider"
 
 export function FieldSlider() {
   const [value, setValue] = useState([200, 800])

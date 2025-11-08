@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "toggle",
+  "type": "registry:ui",
+  "dependencies": [
+    "@radix-ui/react-toggle"
+  ],
+  "files": [
+    {
+      "path": "registry/minecraft/ui/toggle.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport * as TogglePrimitive from \"@radix-ui/react-toggle\"\nimport { cva, type VariantProps } from \"class-variance-authority\"\n\nimport { cn } from \"@/lib/utils\"\n\nconst toggleVariants = cva(\n  \"inline-flex items-center justify-center gap-2 text-sm font-medium hover:bg-[var(--mc-stone)]/50 disabled:pointer-events-none disabled:opacity-50 data-[state=on]:bg-[var(--mc-stone)] data-[state=on]:text-accent-foreground [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 [&_svg]:shrink-0 outline-none whitespace-nowrap border-0 shadow-[2px_2px_0px_0px_var(--mc-border)] font-sans\",\n  {\n    variants: {\n      variant: {\n        default: \"bg-transparent\",\n        outline: \"border-2 border-[var(--mc-border)] bg-transparent\",\n      },\n      size: {\n        default: \"h-9 px-2 min-w-9\",\n        sm: \"h-8 px-1.5 min-w-8\",\n        lg: \"h-10 px-2.5 min-w-10\",\n      },\n    },\n    defaultVariants: {\n      variant: \"default\",\n      size: \"default\",\n    },\n  }\n)\n\nfunction Toggle({\n  className,\n  variant,\n  size,\n  ...props\n}: React.ComponentProps<typeof TogglePrimitive.Root> &\n  VariantProps<typeof toggleVariants>) {\n  return (\n    <TogglePrimitive.Root\n      data-slot=\"toggle\"\n      className={cn(toggleVariants({ variant, size, className }))}\n      {...props}\n    />\n  )\n}\n\nexport { Toggle, toggleVariants }\n",
+      "type": "registry:ui"
+    }
+  ]
+}

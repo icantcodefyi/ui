@@ -1,7 +1,7 @@
 import { ArrowRightIcon } from "lucide-react"
 
-import { Badge } from "@/registry/new-york-v4/ui/badge"
-import { Button } from "@/registry/new-york-v4/ui/button"
+import { Badge } from "@/registry/minecraft/ui/badge"
+import { Button } from "@/registry/minecraft/ui/button"
 import {
   Empty,
   EmptyContent,
@@ -9,14 +9,14 @@ import {
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@/registry/new-york-v4/ui/empty"
-import { Field, FieldLabel } from "@/registry/new-york-v4/ui/field"
+} from "@/registry/minecraft/ui/empty"
+import { Field, FieldLabel } from "@/registry/minecraft/ui/field"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
-} from "@/registry/new-york-v4/ui/input-group"
-import { Spinner } from "@/registry/new-york-v4/ui/spinner"
+} from "@/registry/minecraft/ui/input-group"
+import { Spinner } from "@/registry/minecraft/ui/spinner"
 
 export function SpinnerDemo() {
   return (

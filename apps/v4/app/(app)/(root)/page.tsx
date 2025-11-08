@@ -12,7 +12,7 @@ import {
 } from "@/components/page-header"
 import { PageNav } from "@/components/page-nav"
 import { ThemeSelector } from "@/components/theme-selector"
-import { Button } from "@/registry/new-york-v4/ui/button"
+import { Button } from "@/registry/minecraft/ui/button"
 
 import { RootComponents } from "./components"
 
@@ -71,7 +71,7 @@ export default function IndexPage() {
         <div className="container overflow-hidden">
           <section className="border-border/50 -mx-4 w-[160vw] overflow-hidden rounded-lg border md:hidden md:w-[150vw]">
             <Image
-              src="/r/styles/new-york-v4/dashboard-01-light.png"
+              src="/r/styles/minecraft/dashboard-01-light.png"
               width={1400}
               height={875}
               alt="Dashboard"
@@ -79,7 +79,7 @@ export default function IndexPage() {
               priority
             />
             <Image
-              src="/r/styles/new-york-v4/dashboard-01-dark.png"
+              src="/r/styles/minecraft/dashboard-01-dark.png"
               width={1400}
               height={875}
               alt="Dashboard"

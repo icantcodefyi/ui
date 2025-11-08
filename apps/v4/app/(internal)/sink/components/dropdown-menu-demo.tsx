@@ -21,8 +21,8 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/registry/new-york-v4/ui/avatar"
-import { Button } from "@/registry/new-york-v4/ui/button"
+} from "@/registry/minecraft/ui/avatar"
+import { Button } from "@/registry/minecraft/ui/button"
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -39,7 +39,7 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
-} from "@/registry/new-york-v4/ui/dropdown-menu"
+} from "@/registry/minecraft/ui/dropdown-menu"
 
 export function DropdownMenuDemo() {
   return (

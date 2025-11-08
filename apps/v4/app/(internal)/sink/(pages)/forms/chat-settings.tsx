@@ -3,8 +3,8 @@
 import { useState } from "react"
 import { CircleIcon, InfoIcon } from "lucide-react"
 
-import { Button } from "@/registry/new-york-v4/ui/button"
-import { Checkbox } from "@/registry/new-york-v4/ui/checkbox"
+import { Button } from "@/registry/minecraft/ui/button"
+import { Checkbox } from "@/registry/minecraft/ui/checkbox"
 import {
   Field,
   FieldContent,
@@ -14,14 +14,14 @@ import {
   FieldSeparator,
   FieldSet,
   FieldTitle,
-} from "@/registry/new-york-v4/ui/field"
+} from "@/registry/minecraft/ui/field"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupButton,
   InputGroupInput,
-} from "@/registry/new-york-v4/ui/input-group"
-import { Kbd } from "@/registry/new-york-v4/ui/kbd"
+} from "@/registry/minecraft/ui/input-group"
+import { Kbd } from "@/registry/minecraft/ui/kbd"
 import {
   Select,
   SelectContent,
@@ -29,20 +29,20 @@ import {
   SelectSeparator,
   SelectTrigger,
   SelectValue,
-} from "@/registry/new-york-v4/ui/select"
-import { Switch } from "@/registry/new-york-v4/ui/switch"
+} from "@/registry/minecraft/ui/select"
+import { Switch } from "@/registry/minecraft/ui/switch"
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "@/registry/new-york-v4/ui/tabs"
-import { Textarea } from "@/registry/new-york-v4/ui/textarea"
+} from "@/registry/minecraft/ui/tabs"
+import { Textarea } from "@/registry/minecraft/ui/textarea"
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/registry/new-york-v4/ui/tooltip"
+} from "@/registry/minecraft/ui/tooltip"
 
 const spokenLanguages = [
   { label: "English", value: "en" },

@@ -3,7 +3,7 @@ import { IconArrowUpRight } from "@tabler/icons-react"
 
 import { DirectoryAddButton } from "@/components/directory-add-button"
 import registries from "@/registry/directory.json"
-import { Button } from "@/registry/new-york-v4/ui/button"
+import { Button } from "@/registry/minecraft/ui/button"
 import {
   Item,
   ItemActions,
@@ -14,7 +14,7 @@ import {
   ItemMedia,
   ItemSeparator,
   ItemTitle,
-} from "@/registry/new-york-v4/ui/item"
+} from "@/registry/minecraft/ui/item"
 
 export function DirectoryList() {
   return (

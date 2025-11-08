@@ -7,9 +7,9 @@ import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
-} from "@/registry/new-york-v4/ui/hover-card"
-import { Label } from "@/registry/new-york-v4/ui/label"
-import { Slider } from "@/registry/new-york-v4/ui/slider"
+} from "@/registry/minecraft/ui/hover-card"
+import { Label } from "@/registry/minecraft/ui/label"
+import { Slider } from "@/registry/minecraft/ui/slider"
 
 interface TopPSelectorProps {
   defaultValue: SliderProps["defaultValue"]

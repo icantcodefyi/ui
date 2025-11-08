@@ -7,6 +7,11 @@ const __dirname = path.dirname(__filename)
 
 const DOCS_DIR = path.join(__dirname, "../content/docs/components")
 
+// Base URL for component registry
+// This should point to your registry JSON files
+// The script will append /{component}.json to this URL
+const REGISTRY_BASE_URL = "https://minecraft.ani.ink/r/minecraft"
+
 async function updateComponentDocs() {
   try {
     const files = await fs.readdir(DOCS_DIR)
@@ -32,17 +37,38 @@ async function updateComponentDocs() {
         hasChanges = true
       }
 
-      // 2. Update CLI installation command to use @minecraft-ui/{component}
-      const oldCliPattern = /```bash\s*npx shadcn@latest add ([^\s@]+)\s*```/g
-      const matches = [...content.matchAll(oldCliPattern)]
+      // 2. Update CLI installation command to use URL-based installation
+      // Pattern 1: Match @minecraft-ui/{component} format
+      const minecraftUiPattern =
+        /```bash\s*npx shadcn@latest add @minecraft-ui\/([^\s]+)\s*```/g
+      const minecraftMatches = [...content.matchAll(minecraftUiPattern)]
 
-      for (const match of matches) {
+      for (const match of minecraftMatches) {
+        const oldCommand = match[0]
+        const componentInCommand = match[1]
+        // Remove .json if it's already in the component name
+        const cleanComponentName = componentInCommand.replace(/\.json$/, "")
+        const newCommand = `\`\`\`bash\nnpx shadcn@latest add ${REGISTRY_BASE_URL}/${cleanComponentName}.json\n\`\`\``
+        content = content.replace(oldCommand, newCommand)
+        hasChanges = true
+      }
+
+      // Pattern 2: Match plain component names (e.g., npx shadcn@latest add button)
+      const plainPattern = /```bash\s*npx shadcn@latest add ([^\s@/]+)\s*```/g
+      const plainMatches = [...content.matchAll(plainPattern)]
+
+      for (const match of plainMatches) {
         const oldCommand = match[0]
         const componentInCommand = match[1]
 
-        // Only update if it's not already using @minecraft-ui
-        if (!oldCommand.includes("@minecraft-ui")) {
-          const newCommand = `\`\`\`bash\nnpx shadcn@latest add @minecraft-ui/${componentInCommand}\n\`\`\``
+        // Skip if it's already a URL
+        if (
+          !oldCommand.includes("http://") &&
+          !oldCommand.includes("https://")
+        ) {
+          // Remove .json if it's already in the component name
+          const cleanComponentName = componentInCommand.replace(/\.json$/, "")
+          const newCommand = `\`\`\`bash\nnpx shadcn@latest add ${REGISTRY_BASE_URL}/${cleanComponentName}.json\n\`\`\``
           content = content.replace(oldCommand, newCommand)
           hasChanges = true
         }

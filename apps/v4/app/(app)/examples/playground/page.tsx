@@ -2,21 +2,21 @@ import { Metadata } from "next"
 import Image from "next/image"
 import { RotateCcw } from "lucide-react"
 
-import { Button } from "@/registry/new-york-v4/ui/button"
+import { Button } from "@/registry/minecraft/ui/button"
 import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
-} from "@/registry/new-york-v4/ui/hover-card"
-import { Label } from "@/registry/new-york-v4/ui/label"
-import { Separator } from "@/registry/new-york-v4/ui/separator"
+} from "@/registry/minecraft/ui/hover-card"
+import { Label } from "@/registry/minecraft/ui/label"
+import { Separator } from "@/registry/minecraft/ui/separator"
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "@/registry/new-york-v4/ui/tabs"
-import { Textarea } from "@/registry/new-york-v4/ui/textarea"
+} from "@/registry/minecraft/ui/tabs"
+import { Textarea } from "@/registry/minecraft/ui/textarea"
 
 import { CodeViewer } from "./components/code-viewer"
 import { MaxLengthSelector } from "./components/maxlength-selector"

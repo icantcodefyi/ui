@@ -13,8 +13,8 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
-} from "@/registry/new-york-v4/ui/alert-dialog"
-import { Button } from "@/registry/new-york-v4/ui/button"
+} from "@/registry/minecraft/ui/alert-dialog"
+import { Button } from "@/registry/minecraft/ui/button"
 import {
   DialogClose,
   DialogContent,
@@ -22,16 +22,16 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from "@/registry/new-york-v4/ui/dialog"
+} from "@/registry/minecraft/ui/dialog"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/registry/new-york-v4/ui/dropdown-menu"
-import { Label } from "@/registry/new-york-v4/ui/label"
-import { Switch } from "@/registry/new-york-v4/ui/switch"
+} from "@/registry/minecraft/ui/dropdown-menu"
+import { Label } from "@/registry/minecraft/ui/label"
+import { Switch } from "@/registry/minecraft/ui/switch"
 
 export function PresetActions() {
   const [open, setIsOpen] = React.useState(false)
