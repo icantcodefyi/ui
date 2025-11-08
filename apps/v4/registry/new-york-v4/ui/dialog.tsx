@@ -60,7 +60,7 @@ function DialogContent({
       <DialogPrimitive.Content
         data-slot="dialog-content"
         className={cn(
-          "bg-[var(--mc-stone)] text-[var(--mc-stone-foreground)] data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed top-[50%] left-[50%] z-50 grid w-full max-w-[calc(100%-2rem)] translate-x-[-50%] translate-y-[-50%] gap-4 border-0 p-6 shadow-[6px_6px_0px_0px_var(--mc-border)] duration-200 sm:max-w-lg font-sans",
+          "data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed top-[50%] left-[50%] z-50 grid w-full max-w-[calc(100%-2rem)] translate-x-[-50%] translate-y-[-50%] gap-4 border-0 bg-[var(--mc-stone)] p-6 font-sans text-[var(--mc-stone-foreground)] shadow-[6px_6px_0px_0px_var(--mc-border)] duration-200 sm:max-w-lg",
           className
         )}
         {...props}
@@ -110,7 +110,7 @@ function DialogTitle({
   return (
     <DialogPrimitive.Title
       data-slot="dialog-title"
-      className={cn("text-lg leading-none font-bold font-sans", className)}
+      className={cn("font-sans text-lg leading-none font-bold", className)}
       {...props}
     />
   )
@@ -123,7 +123,10 @@ function DialogDescription({
   return (
     <DialogPrimitive.Description
       data-slot="dialog-description"
-      className={cn("text-[var(--mc-stone-foreground)]/80 text-sm font-sans", className)}
+      className={cn(
+        "font-sans text-sm text-[var(--mc-stone-foreground)]/80",
+        className
+      )}
       {...props}
     />
   )

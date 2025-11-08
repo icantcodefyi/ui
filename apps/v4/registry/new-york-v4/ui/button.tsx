@@ -12,8 +12,7 @@ const buttonVariants = cva(
         default: "bg-[var(--mc-success)] text-white hover:brightness-110",
         destructive:
           "bg-[var(--mc-error)] text-[var(--mc-error-foreground)] hover:brightness-110",
-        outline:
-          "bg-background border-2 border-[var(--mc-border)]",
+        outline: "bg-background border-2 border-[var(--mc-border)]",
         secondary:
           "bg-[var(--mc-stone)] text-[var(--mc-stone-foreground)] hover:brightness-110",
         ghost:

@@ -1,4 +1,9 @@
-import { AlertCircleIcon, CheckCircle2Icon, AlertTriangleIcon, InfoIcon } from "lucide-react"
+import {
+  AlertCircleIcon,
+  AlertTriangleIcon,
+  CheckCircle2Icon,
+  InfoIcon,
+} from "lucide-react"
 
 import {
   Alert,
