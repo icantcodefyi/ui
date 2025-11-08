@@ -1,6 +1,6 @@
 {
-  "name": "shadcn/ui",
-  "homepage": "https://ui.shadcn.com",
+  "name": "minecraft-ui",
+  "homepage": "https://minecraft.ani.ink",
   "items": [
     {
       "name": "index",
