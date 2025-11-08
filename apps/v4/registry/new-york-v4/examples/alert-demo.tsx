@@ -1,4 +1,4 @@
-import { AlertCircleIcon, CheckCircle2Icon, PopcornIcon } from "lucide-react"
+import { AlertCircleIcon, CheckCircle2Icon, AlertTriangleIcon, InfoIcon } from "lucide-react"
 
 import {
   Alert,
@@ -9,18 +9,25 @@ import {
 export default function AlertDemo() {
   return (
     <div className="grid w-full max-w-xl items-start gap-4">
-      <Alert>
+      <Alert variant="success">
         <CheckCircle2Icon />
         <AlertTitle>Success! Your changes have been saved</AlertTitle>
         <AlertDescription>
-          This is an alert with icon, title and description.
+          This is a Minecraft-styled alert with icon, title and description.
         </AlertDescription>
       </Alert>
       <Alert>
-        <PopcornIcon />
+        <InfoIcon />
         <AlertTitle>
           This Alert has a title and an icon. No description.
         </AlertTitle>
+      </Alert>
+      <Alert variant="warning">
+        <AlertTriangleIcon />
+        <AlertTitle>Warning: Low inventory</AlertTitle>
+        <AlertDescription>
+          Your diamond supply is running low. Consider mining more resources.
+        </AlertDescription>
       </Alert>
       <Alert variant="destructive">
         <AlertCircleIcon />
